@@ -82,7 +82,19 @@ final class EKWindowProvider: EntryPresenterDelegate {
             entryWindow = EKWindow(with: entryVC)
             mainRollbackWindow = UIApplication.shared.keyWindow
         } else {
-            entryVC = rootVC!
+            if #available(iOS 13.0, *) {
+                if entryWindow.windowScene == nil {
+                    entryWindow = nil
+                    entryView = nil
+                    entryVC = EKRootViewController(with: self)
+                    entryWindow = EKWindow(with: entryVC)
+                    mainRollbackWindow = UIApplication.shared.keyWindow
+                } else {
+                    entryVC = rootVC!
+                }
+            } else {
+                entryVC = rootVC!
+            }
         }
         return entryVC
     }
@@ -124,6 +136,11 @@ final class EKWindowProvider: EntryPresenterDelegate {
     func isCurrentlyDisplaying(entryNamed name: String? = nil) -> Bool {
         guard let entryView = entryView else {
             return false
+        }
+        if #available(iOS 13.0, *) {
+            if let entryWindow = entryWindow, entryWindow.windowScene == nil {
+                return false
+            }
         }
         if let name = name { // Test for names equality
             return entryView.content.attributes.name == name
