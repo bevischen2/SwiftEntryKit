@@ -25,7 +25,7 @@ final class EKBackgroundView: EKStyleView {
         imageView = UIImageView()
         visualEffectView = UIVisualEffectView(effect: nil)
         gradientView = GradientView()
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         
         addSubview(imageView)
         imageView.contentMode = .scaleAspectFill

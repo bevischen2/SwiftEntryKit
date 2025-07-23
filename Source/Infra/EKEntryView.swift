@@ -55,7 +55,7 @@ class EKEntryView: EKStyleView {
     // MARK: Setup
     init(newEntry content: Content) {
         self.content = content
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setupContentView()
         applyDropShadow()
         applyBackgroundToContentView()

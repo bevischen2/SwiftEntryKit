@@ -15,7 +15,7 @@ public class EKImageNoteMessageView: EKAccessoryNoteMessageView {
     }
     
     public init(with content: EKProperty.LabelContent, imageContent: EKProperty.ImageContent) {
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setup(with: content, imageContent: imageContent)
     }
     

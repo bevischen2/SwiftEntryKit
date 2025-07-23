@@ -23,7 +23,7 @@ final public class EKPopUpMessageView: UIView {
     
     public init(with message: EKPopUpMessage) {
         self.message = message
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setupImageView()
         setupTitleLabel()
         setupDescriptionLabel()

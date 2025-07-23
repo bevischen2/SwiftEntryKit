@@ -31,7 +31,7 @@ public class EKProcessingNoteMessageView: EKAccessoryNoteMessageView {
     }
     
     public init(with content: EKProperty.LabelContent, activityIndicator: UIActivityIndicatorView.Style) {
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setup(with: content, activityIndicator: activityIndicator)
     }
     
