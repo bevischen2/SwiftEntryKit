@@ -16,7 +16,7 @@ public class EKXStatusBarMessageView: UIView {
     
     // MARK: Setup
     public init(leading: EKProperty.LabelContent, trailing: EKProperty.LabelContent) {
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setup(leading: leading, trailing: trailing)
     }
     

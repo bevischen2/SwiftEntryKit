@@ -82,7 +82,7 @@ public class EKMessageContentView: UIView {
     // MARK: Setup
     
     public init() {
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         clipsToBounds = true
         setupTitleLabel()
         setupSubtitleLabel()

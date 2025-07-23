@@ -37,7 +37,7 @@ final public class EKRatingMessageView: UIView, EntryAppearanceDescriptor {
 
     public init(with message: EKRatingMessage) {
         self.message = message
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setupMessageContentView()
         setupSymbolsView()
         setupButtonBarView()

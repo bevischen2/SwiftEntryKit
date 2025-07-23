@@ -33,7 +33,7 @@ final public class EKTextField: UIView {
     
     public init(with content: EKProperty.TextFieldContent) {
         self.content = content
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setupImageView()
         setupTextField()
         setupSeparatorView()

@@ -161,7 +161,7 @@ class EKContentView: UIView {
         case .top:
             verticalLimit = inOffset
         case .bottom, .center:
-            verticalLimit = UIScreen.main.bounds.height + inOffset
+            verticalLimit = ScreenUtil.bounds.height + inOffset
         }
         
         // Setup keyboard constraints

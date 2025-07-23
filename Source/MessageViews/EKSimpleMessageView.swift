@@ -17,7 +17,7 @@ public class EKSimpleMessageView: UIView {
     // MARK: Setup
     init(with message: EKSimpleMessage) {
         self.message = message
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setupThumbImageView(with: message.image)
         setupMessageContentView(with: message.title,
                                 description: message.description)

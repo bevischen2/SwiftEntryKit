@@ -35,7 +35,7 @@ final class MaxWidthSelectionTableViewCell: SelectionTableViewCell {
         case 0:
             attributesWrapper.attributes.positionConstraints.maxSize.width = .offset(value: 0)
         case 1:
-            attributesWrapper.attributes.positionConstraints.maxSize.width = .constant(value: UIScreen.main.minEdge - 40)
+            attributesWrapper.attributes.positionConstraints.maxSize.width = .constant(value: UIScreen.minEdge - 40)
         case 2:
             attributesWrapper.attributes.positionConstraints.maxSize.width = .ratio(value: 0.9)
         default:

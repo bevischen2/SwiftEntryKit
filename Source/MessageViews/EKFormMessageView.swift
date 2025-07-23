@@ -28,7 +28,7 @@ final public class EKFormMessageView: UIView {
                 buttonContent: EKProperty.ButtonContent) {
         self.titleContent = title
         self.textFieldsContent = textFieldsContent
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: ScreenUtil.bounds)
         setupScrollView()
         setupTitleLabel()
         setupTextFields(with: textFieldsContent)
