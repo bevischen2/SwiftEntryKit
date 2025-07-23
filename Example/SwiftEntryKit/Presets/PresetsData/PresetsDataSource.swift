@@ -96,7 +96,7 @@ struct PresetsDataSource {
             height: .intrinsic
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         attributes.statusBar = .dark
@@ -403,7 +403,7 @@ struct PresetsDataSource {
             pullbackAnimation: .easeOut
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         descriptionString = "Top float with gradient background"
@@ -434,7 +434,7 @@ struct PresetsDataSource {
         )
         attributes.statusBar = .dark
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         descriptionString = "Bottom float with gradient background. Touches delay exit"
@@ -522,7 +522,7 @@ struct PresetsDataSource {
             height: .intrinsic
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         attributes.statusBar = .dark
@@ -617,7 +617,7 @@ struct PresetsDataSource {
             )
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         descriptionString = "Top floating alert view with button bar. Smooths in animately."
@@ -669,7 +669,7 @@ struct PresetsDataSource {
             )
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         descriptionString = "Center floating alert view with button bar."
@@ -719,7 +719,7 @@ struct PresetsDataSource {
             )
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         descriptionString = "Appears in the center. Fun, expressive, and rich with animations"
@@ -784,7 +784,7 @@ struct PresetsDataSource {
             )
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         descriptionString =
@@ -856,7 +856,7 @@ struct PresetsDataSource {
             )
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         descriptionString =
@@ -926,7 +926,7 @@ struct PresetsDataSource {
             )
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         descriptionString = "Keeps 10pts offset and resists screen top edge. Can be dismissed using swipe."
@@ -1060,7 +1060,7 @@ struct PresetsDataSource {
             height: .intrinsic
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         attributes.statusBar = .dark
@@ -1140,7 +1140,7 @@ struct PresetsDataSource {
             height: .intrinsic
         )
         attributes.positionConstraints.maxSize = .init(
-            width: .constant(value: UIScreen.main.minEdge),
+            width: .constant(value: UIScreen.minEdge),
             height: .intrinsic
         )
         attributes.statusBar = .ignored
